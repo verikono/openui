@@ -7,6 +7,8 @@ export { useThread, useThreadList } from "./hooks/useThread";
 export { ArtifactContext, useArtifactStore } from "./store/ArtifactContext";
 export { ChatProvider } from "./store/ChatProvider";
 export {
+  geminiAdapter,
+  geminiMessageFormat,
   agUIAdapter,
   langGraphAdapter,
   openAIAdapter,

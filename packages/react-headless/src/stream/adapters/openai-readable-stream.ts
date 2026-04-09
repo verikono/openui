@@ -1,5 +1,5 @@
-import type { ChatCompletionChunk } from "openai/resources/chat/completions";
-import { AGUIEvent, EventType, StreamProtocolAdapter } from "../../types";
+import type { ChatCompletionChunk } from "./types";
+import { AGUIEvent, EventType, StreamProtocolAdapter } from "../../types/stream";
 
 /**
  * Adapter for streams produced by the OpenAI SDK's `Stream.toReadableStream()`.

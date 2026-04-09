@@ -7,7 +7,7 @@
     "module": "ESNext",
     "outDir": "./dist",
     "rootDir": "./src",
-    "noEmit": true
+    "noEmit": false
   },
   "exclude": ["vitest.config.ts", "src/**/__tests__", "dist", "node_modules"]
 }

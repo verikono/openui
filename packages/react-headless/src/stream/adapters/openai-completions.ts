@@ -1,5 +1,5 @@
-import type { ChatCompletionChunk } from "openai/resources/chat/completions";
-import { AGUIEvent, EventType, StreamProtocolAdapter } from "../../types";
+import type { ChatCompletionChunk } from "./types";
+import { AGUIEvent, EventType, StreamProtocolAdapter } from "../../types/stream";
 
 export const openAIAdapter = (): StreamProtocolAdapter => ({
   async *parse(response: Response): AsyncIterable<AGUIEvent> {

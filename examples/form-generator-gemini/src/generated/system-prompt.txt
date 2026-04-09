@@ -21,7 +21,7 @@ Button(label: string, action?: {type: "open_url", url: string} | {type: "continu
 Buttons(buttons: Button[]) — Row of Button components
 
 ### Forms
-Form(name: string, title: string, description?: string, buttons: Buttons, fields) — Form container with title, optional description, fields, and action buttons
+Form(name: string, title: string, description?: string, buttons: Buttons, fields?: (FormControl | FormRow)[]) — Form container with title, optional description, fields, and action buttons
 FormRow(fields: FormControl[]) — Horizontal row that places multiple FormControl fields side-by-side, each sharing equal width. Use for short paired fields like First Name / Last Name or City / State / ZIP.
 FormControl(label: string, input: Input | TextArea | Select | Slider | CheckBoxGroup | RadioGroup | SwitchGroup | NumberField, hint?: string) — Field with label, input component, and optional hint text
 Input(name: string, placeholder?: string, type?: "text" | "email" | "password" | "number" | "url", rules?: {required?: boolean, email?: boolean, url?: boolean, numeric?: boolean, min?: number, max?: number, minLength?: number, maxLength?: number, pattern?: string}) — Single-line text input

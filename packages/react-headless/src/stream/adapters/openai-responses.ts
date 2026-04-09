@@ -1,5 +1,5 @@
-import type { ResponseStreamEvent } from "openai/resources/responses/responses";
-import { AGUIEvent, EventType, StreamProtocolAdapter } from "../../types";
+import type { ResponseStreamEvent } from "./types";
+import { AGUIEvent, EventType, StreamProtocolAdapter } from "../../types/stream";
 
 export const openAIResponsesAdapter = (): StreamProtocolAdapter => ({
   async *parse(response: Response): AsyncIterable<AGUIEvent> {
