@@ -12,6 +12,8 @@ export {
   openAIAdapter,
   openAIReadableStreamAdapter,
   openAIResponsesAdapter,
+  vercelAIAdapter,
+  vercelAIMessageFormat,
 } from "./stream/adapters";
 export {
   langGraphMessageFormat,
